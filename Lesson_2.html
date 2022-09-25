@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    
+  </head>
+  <body>
+    <h1>Notes for week 2</h1>
+    <a href="quizNinjaProjectWeek2.html"><h2>Coding practice</h2></a>
+    <h2>CH. 2 Programing Basics</h2>
+    <h3>Comments</h3>
+    <ul>
+        <li>Good coding requires good commenting</li>
+        <li>Single line comments start with "//" </li>
+        <li>Multi line comments start with "/*" and end with "*/" </li>
+    </ul>
+    <h3>JS Grammer</h3>
+    <ul>
+        <li>it is best practice to use semicolons at the end of each statment and to start a new line for each sttement</li>
+        <li>a block - a series of stements collected together inside curly braces"{}". Blocks are not terminated by semicolons.</li>
+    </ul>
+    <h3>Reserved Words</h3>
+    <p>For a complete list of reserved words go to <a href="https://www.w3schools.com/js/js_reserved.asp">https://www.w3schools.com/js/js_reserved.asp</a></p>
+    <h3>Data Types</h3>
+    <ul>
+        <li>string</li>
+        <li>symbol</li>
+        <li>Number</li>
+        <li>boolean</li>
+        <li>undefined</li>
+        <li>Null</li>
+    </ul>
+    <p>anything not listed above is an object and is not a primitive data type.Including:<ul>
+        <li>arrays</li>
+        <li>functions</li>
+        <li>object literals</li>
+    </ul></p>
+    <h3>Variables</h3>
+    <h4>Declaring and Assigning Variables</h4>
+    <ul>
+        <li>"const" is used when a variable will not be assigned a different value</li>
+        <li>"let" is used when a variable might be reassigned a new variable</li>
+        <li>Examples:
+            <p>const name = "Alexa";</p>
+            <p>let score = "0";</p>
+        </li>
+    </ul>  
+    <h4>scope</h4>
+    <ul><li>Global scope - any variable declared outside of a block. These should be kept to a minimum</li>
+        <li>Local Scope - any variable declared inside of a block.</li><ul>
+    <h3>Naming Constants and variables</h3>
+    <p>although valid it is bad practice to start variables with "_" or "$" as these are reserved for private properties and libraries.</p>
+    <h3>Direct assignment and assignment by reference</h3>
+    <h3>Strings</h3>
+    <ul>
+        <li>A string is a collection of characters</li>
+        <li>Constructor Function: "String("hello")" this construction creates an object as opposed to a primitive data type.</li>
+        <li></li>
+    </ul>
+    <h3>String Properties and methods</h3>
+    <ul>
+        <li>Properties - info about the object/value. </li>
+        <li>Methods() - perform an action (change or tell us more info)on the object/value</li>
+        <li><ul>
+            <li>.length (gives the length of the array)</li>
+            <li>.toUpperCase() (converts a string to upper case)</li>
+            <li>.toLowerCase() (converts a string to lower case)</li>
+            <li>.charAt() (tells the index of whats in the parentheses</li>
+            <li>.indexOf() (tells the index of whats in the parentheses)</li>
+            <li>.lastIndexOf() (tells the index of the last occurance of whats in the parentheses</li>
+            <li>.includes (tells weather an array contains what's in the parentheses)</li>
+            <li>.concat() (concats one or more strings together can also use '+' instead)</li>
+            <li>.repeat() (repeats the string the amount of times in the parentheses)</li>
+        </ul></li>
+    </ul>
+    <h3>Template Literals</h3>
+    <ul>
+        <li>uses backticks (`) instead of quotes</li>
+        <li>allows for interpolation of Javascript Ex: `Hello ${ name }`</li>
+    </ul>
+    <h3>Symbols</h3>
+    <h3>Numbers (.isInteger (checks if a number is an integer))</h3>
+    <h3>Octal and Hexadecimal Numbers</h3>
+    <h3>Number Methods</h3>
+    <ul>
+        <li>.toFixed() (rounds a decimal to the number of decimal places in th parentheses).</li>
+        <li>.toPrecision() rounds a number to the integer place you put in the parentheses</li>
+        <li>arithmetic can be used as well
+        <ul>
+            <li>addition (+) </li>
+            <li> subtraction (-)</li>
+            <li> multiplication (*)</li>
+            <li>division (/)</li>
+            <li>exponation (**)</li>
+            <li>remainder of a division (%)</li>
+        </ul></li>
+    </ul>
+    <h3>Changing the values of the variables</h3>
+    <ul>
+        <li>incrementing values "++" and "--"</li>
+        <li>infinity any number larger then about 1e308 can be positive or negative or a small decimal number</li>
+        <li>NaN - Not a Number</li>
+    </ul>
+    <h3>Type Coercion</h3>
+    <h3>converting beween strings and numbers</h3>
+    <ul>
+        <li>converting numbers to strings "string()"</li>
+        <li>parsing numbers "parseInt()" and "parseFloat()"</li>
+    <ul>
+    <h3>undefined</h3>
+    <h3>Null - behaves like 0</h3>
+    <h3>booleans - T/F</h3>
+    <h3>Logical operators</h3>
+    <h3>Bitwise operators</h3>
+    <h3>Comparison</h3>
+    <h3>quiz ninja project</h3>
+<h2>Arrays, Logic, and Loops</h2>
+        <h3>Arrays- an ordered list of values</h3>
+            <ul>
+                <li>Array literal(prefered): "const myArray = [];"</li>
+                <li>aray constructor: "const myArray = new Array();"</li>
+                <li>Creating Arrray Literals: "const avengers = ['Captian America', 'Iron Man', 'Thor', 'Hulk'];"</li>
+                <li>Removing values from an array: "delete avengers[3];" will remove a value and replace it with "undefined"</li>
+                <li>Destructuring Arrays: "const [x,y] = [1,2]"</li>
+                <li>Array Properties and Methods</li>
+                <li>Pop(remove and use last item),Push(appends a new item to the end),shift(remove and use first item), and unshift(appends an item to the beginning of an array)</li>
+                <li>Merging Arrays: 1) concat 2) spread</li>
+                <li>the join() Method combines all items and seperates by a comma or what is in the parentheses. "avengers.join();" </li>
+                <li>Slicing - uses any items from an array without removing it and splicing - "avengers.splice(3, 1 'scarlet witch');" second numbers is items removed</li>
+                <li>reverse</li>
+                <li>sort</li>
+                <li>Finding if a value is in an array "avengers.includes('Black Widow', 1);"</li>
+                Multidemensional arrays
+            </ul>
+        <h3>Sets</h3>
+        <ul>
+            <li>Creating sets "const list = new Set();"</li>
+            <li>Adding Value to sets "add()" method</li>
+            <li>Removing values from sets "delete()" method to remove 1 value or "clear()" method to delete everything</li>
+        </ul>
+        <h3>Converting sets to arrays helps to delete duplicates</h3>
+            <h4>Weak Sets</h4>
+        <h3>Maps</h3>
+            <ul>
+                <li>Creating Maps"const romanNumerals = new Map();"</li>
+                <li>adding entries to maps(romanNumerals.set(1,'I').set(2,'II');"</li>
+                <li>Map Methods to look up a value use "romanNumeral.get(2);" or use "has()" to see if a key is in a map.</li>
+                <li>Removing entries from maps </li>
+            </ul>
+        <h3>Converting Maps to Arrays similiar to sets</h3>
+        <h3>Logic</h3>
+            <ul>
+                <li>if Statments "if (condition) {/*code to run if condition is true*/}</li>
+                <li>else statments "if (condition) {/*code to run if condition is true*/}else{*/code to run if condition is false*/}"</li>
+                <li>Ternary Operator (?) is a shorthand for if...else statments "const n=5;n%===0 ? console.log('even') : console.log('odd');" (see example in book for shorter way</li>
+                <li>switch Statments "switch (number) {case 4: console.log('You rolled a four'); break; case 5: console.log('You rolled a five'); break; case 6: console.log('You rolled a six'); break; case 7: console.log('You rolled a seven'); break; default: console.log('You rolled a number less than 4'); break;}</li>
+            </ul>
+        <h3>Loops</h3>
+            <ul>
+                <li>While loop "while (condition){ /*do somthing*/}</li>
+                <li>be careful to avoid infinite loops they will crash your program</li>
+                <li>do...while Loops the code will be run atleast once and then check the condition to se if it should run agian( do{ do something} while(condition)</li>
+                <li>For Loops "for (let bottles = 10 ; bottles > 0 ; bottles--) { console.log('There were ${ bottles} bottles on the wall');}</li>
+                <li>Nested for Loops the outer loop will run until it reaches the inner loop then the inner loop wil run</li>
+                <li>Looping over Arrays</li>
+                <li>looping over sets</li>
+                <li>Looping over maps</li>
+            </ul>
+<h2>Functions</h2>
+        <h3>defining a function</h3>
+            <ul>
+                <li>Function declarations "function hello(){console.log('hello');}</li>
+                <li>function expressions creates an anonymous function</li>
+                <li>Function() constructors- not reccomended</li></ul>
+         <h3>Invoking a function"functionName()" DRY principle "Don't Repeat Yourself" invoke fuctions instead.</h3>
+                  
+        <h3>Return Values "function howdy(){return 'howdy World';} const message = howdy();</h3>
+        <h3>parameters and arguments (basically inputs)parameters are set when a function is defined while arguments are defined when a function is invoked</h3> 
+             <ul>
+                <li>Variable Number of arguments</li>
+                <li>improved mean function<p>function mean(...values) {let total = 0; for(const value of values) {total += value;} return total/values.length;}</p></li>
+                <li>Default Parameters "function hello(name='World') {console.log(`Hello ${name}!);}" you can always override the default parameter by specifying your own argument</li>
+                <li>arrow function must be named alway annonymous "const squar = x => x*x;" if there's more then one line of code curly braces are needed</li>
+                <li>Function Hoisting</li>
+                <li>Variable Hoisting - not a good idea</li>
+             </ul>
+        <h3>Callbacks - a function that is passed to another function as a parameter</h3>
+             <ul>
+                <li>Sorting arrays with a callback</li>
+             </ul>
+        <h3>Array Iterators</h3>
+             <ul>
+                <li>forEach() "colors.forEach( (color,index) => console.log(`Color at position ${index} is ${color}`) );"</li>
+                <li>map()</li>
+                <li>reduce() gives a running total</li>
+                <li>filter</li>
+                <li>chaining iterators together</li>
+                <li>Improving the mean function<p>function mean(array) {
+                    Const total = array.reduce((a,b)=> a +b);
+                    return total/array.length;
+                }
+                </p></li>
+             </ul>
+
+
+
+
+    
+  </body>
+</html>

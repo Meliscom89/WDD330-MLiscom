@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    
+  </head>
+  <body>
+    <h1>Notes for week 3</h1>
+    <a href="JavaScript30-master/01 - JavaScript Drum Kit/index-START.html"><h2>Coding practice</h2></a>
+    <h2>Object Methods:this</h2>
+        <h3>Method Examples- A method is a function that is a property of an object.</h3>
+            <ul>
+                <li>user = { sayHi(){ alert('Hello');}};</li>
+            </ul>
+        <h3>"this" method - the value of this is the object"before the dot", the one used to call the method.</h3>
+        <ul>
+            <li>let user = {name: 'John', age: 30,sayHi(){ alert(this.name);}}; user.sayHi();</li>
+        </ul>
+        <h3>"this" is not bound</h3>
+        <h3>Arrow functions have no "this"</h3>
+            
+    <h2>Javascript: Novice to Ninja</h2>
+        <h3>Objects</h3>
+            <h4>Object Literals</h4>
+                <ul>
+                    <li>object - self-contained set of related values and functions</li>
+                    <li>if a property's value is a function its a method</li>
+                    <li>A super example:
+                        const superman = {
+                            name: 'Superman',
+                            'real name': 'Clark Kent',
+                            height : 75,
+                            weight : 235,
+                            villian : false,
+                            allies : ['Batman', 'Supergirl', 'Superboy'],
+                            fly(){
+                                return 'Up, up and away';
+                            }
+                        };
+                    </li>
+                </ul>
+            <h4>Creating Objects</h4>
+            <ul>
+                <li>const spiderman = {}</li>
+                <li>accessing properties "superman.name"</li>
+                <li>computed properties</li>
+            </ul>
+            <h4>Calling Methods: same as invoking a function "superman.name" or "spiderman['name']()".</h4>
+            <h4>Checking if Properties or Methods exist "'city' in spiderman;"</h4>
+            <h4>Finding all the properties of an object
+                <ul>
+                    <li>"for(const key in spiderman) {
+                    console.log(key + ": " + spiderman[key]);
+                    }"</li>
+                    <li>Adding properties "superman.city = 'Metropolise';"</li>
+                    <li>Changing Properties "superman['real name'] = 'Kal-El';</li>
+                </ul>
+            </h4>
+            </h4>
+            <h4>Removing Properties "delete superman.fly"</h4>
+            <h4>Nested Objects</h4>
+                <ul>
+                    <li>const jla ={
+                    superman: { realName : 'Clark Kent'},
+                    batman: { realName : 'Bruce Wayne'},
+                    }</li>
+                    <li> to access: 
+                        jla.superman.realName</li>
+                    <li>objects as Parameters to Functions</li>
+                    <li>this - refers to the object that is within
+                        const dice ={
+                            sides:6,
+                            roll() { 
+                                return Math.floor(this.sides * Math.random()) + 1;
+                            }
+                        }
+                    </li>
+                </ul>
+            <h4>Namespacing use Object literal pattern to create namespace</h4>
+            <h4>Built-in objects</h4>
+            <ul>
+                <li>JSON</li>
+                <li>The Math Object
+                    <ul>
+                        <li>Mathamatical Constants</li>
+                        <li>Mathamatical Methods</li>
+                        <li>Absolute Values</li>
+                        <li>Rounding Methods</li>
+                        <li>Powers and Roots</li>
+                        <li>Logarithmic Methods</li>
+                        <li>Maximum & Minimum Methods</li>
+                        <li>Trigonometric Methods</li>
+                        <li>Random Numbers</li>
+                    </ul>
+                </li>
+                <li>The date Object
+                    <ul><li>need to use a constructor Function</li>
+                        <li>Getter Methods</li>
+                        <li>Setter Methods</li>
+                    </ul>
+                </li>
+                <li>The RegExp Object</li>
+            </ul>
+            <h4>Character groups</h4>
+        <h3>Document object model</h3>
+            <h4>The Document Object Model</h4>
+            <ul>
+                <li>What is the DOM</li>
+            </ul>
+            <h4>History of the DOM</h4>
+            <h4>An Example Web page</h4>
+            <h4>Getting Elements</h4>
+               <ul><li>node types
+                    <ul>
+                        <li>1 - element</li>
+                        <li>2 - attribute</li>
+                        <li>3 - text</li>
+                     <li>8 - comment</li>
+                        <li>9 - body</li>
+                    </ul></li>
+               <li> Legacy DOM Shortcut Methods
+                   <ul>
+                        <li>Document.body</li>
+                        <li>Document.images</li>
+                        <li>Document.links</li>
+                        <li>Document.anchors</li>
+                        <li>Document.forms</li>
+                    </ul></li>
+                <li>Getting an Element by its ID
+                    const h1 = document.getElementById(title);
+                </li>
+                <li>Getting an Element by its tag name
+                    const listItems = document.getElementByTagName('li');
+                </li>
+                <li>Get Elements by their Class name
+                    const heroes = document.getElementsByClassName('hero');
+                </li>
+                <li>Query Selectors</li>
+                <li>Navigating th DOM tree</li>
+                <li>Find the value of a node
+                    const textNode = wonderWoman.firstChild;
+                    textNode.nodeValue;
+                    returns: "Wonder Woman"
+
+                    you can use textContent in the same way
+                </li>
+            </ul>
+            <h4>Setting an elements attributes</h4>
+            <ul>
+                <li>Classes of an Element</li>
+                <ul>
+                    <li>The className property</li>
+                    <li>The classList property</li>
+                </ul>
+                <li>Creating Dynamic Markup</li>
+                <ul>
+                    <li>Creating an Element</li>
+                    <li>Creating a text node</li>
+                    <li>Appending nodes</li>
+                    <li>afunction to create elements</li>
+                    <li>Adding elemnts to a page</li>
+                    <li>replacing elements on a page</li>
+                </ul>
+            </ul>
+            <h4>Updating CSS</h4>
+            <ul>
+                <li>Camel Case Properties</li>
+                <li>disappearing act</li>
+                <li>checking style properties</li>
+
+            </ul>
+        <h3>Events</h3>
+            <h4>Event Listeners</h4>
+            <ul>
+                <li>inline event handlers</li>
+                <li>Older event handlers</li>
+                <li>using event Listeners</li>
+            </ul>
+            <h4>Example Code</h4>
+            <h4>The Event Object</h4>
+            <h4>Types of events</h4>
+            <ul>
+                <li>The event target</li>
+                <li>Coordinants of an event</li>
+                <li>types of events<ul>
+                    <li>Mouse Events</li>
+                    <li>keyboard events</li>
+                    <li>modifier keys</li>
+                    <li>touch events</li>
+                </ul></li>
+            </ul>
+            <h4>Removing Event Listeners</h4>
+            <h4>Stopping default behavior</h4>
+            <h4>Event Propogation</h4>
+            <ul>
+                <li>bubbling</li>
+                <li>capturing</li>
+                <li>stopping the bubbling phase</li>
+            </ul>
+            <h4>Event Delegation</h4>    
+  </body>
+</html>

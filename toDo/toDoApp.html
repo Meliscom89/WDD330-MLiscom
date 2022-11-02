@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Melissa Liscom" />
+    <meta
+      name="description"
+      content="To Do App for Melissa Liscom in WDD 330: Web Frontend Development II at Brigham Young University - Idaho"
+    />
+    <title>To Do App | Melissa Liscom</title>
+
+    <link rel="stylesheet" href="toDoStyle.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="greeting">
+        <h2 class="title">
+          Hello, <input type="text" id="name" placeholder="Name here" />
+        </h2>
+      </section>
+
+      <!--to do list section-->
+      <section class="toDoList">
+        <h3>To Do List</h3>
+        <div class="list" id="toDoList">
+          
+        </div>
+      </section>
+        
+        <form id="newToDoForm" class="createToDo">
+          <h4>What's on your to do list?</h4>
+          
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="e.g. Do the dishes."
+          />
+          
+          <input type="submit" value="Add To Do" />
+        </form>
+     <h4>Filter by Status</h4>
+          <div class="filters">
+              <button type="button" id="doneFilter">Done</button>
+              <button type="button" id="needToDoFilter">Need To Do</button>
+              <button type="button" id="allFilter">All</button>
+          </div>
+    </main>
+    <script src="toDoScript.js"></script>
+  </body>
+</html>

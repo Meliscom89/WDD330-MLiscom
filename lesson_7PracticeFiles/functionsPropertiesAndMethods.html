@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Reverse a number</title>
+</head>
+<body>
+    <input type="number" id="number"></input>
+    <button id="submitButton">Submit</button>
+    <div id="display"></div>
+<script>
+    const submitButton = document.getElementById("submitButton");
+    const number = document.getElementById("number");
+    const display = document.getElementById("display"); 
+    submitButton.onclick = (number) => {
+        function reverse(number){
+            number = number + "";
+            return number.split("").reverse().join("");;
+        }
+        function displayReverse () {
+        display.innerText = reverse(number);
+    }};
+    
+</script>  
+</body>
+
+</html>

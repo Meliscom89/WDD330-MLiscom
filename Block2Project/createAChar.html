@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Melissa Liscom" />
+    <meta
+      name="description"
+      content="Final Project for Melissa Liscom in WDD 330: Web Frontend Development II at Brigham Young University - Idaho"
+    />
+    <title>Dungeon & Dragons App</title>
+    
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <main>
+          
+
+       
+            <img id="dragonEye" src="images/dragonEye.jpeg" width="100%" height="100%"></img>
+            <div class="navBottomContainer">
+                <ul class="navigationBottom">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="myChar.html"><li >My Characters</li></a>
+                    <a href="createAChar.html"><li class="current">Create a New Character</li></a>
+                    <a href="rollDiceApp.html"><li>Roll Dice</li></a>
+                    <a href="spells.html"><li>Spells</li></a>
+                </ul>
+            </div>
+            <h1>Create a Character</h1>
+            <form id="cacForm">
+                <h3>General Information</h3>
+                <div id="cacSection1" class="cacSection">
+                    <label for="playerName">Player Name:</label>
+                    <input type="text" id="playerName" name="playerName">
+                    <label for="characterName">Character Name:</label>
+                    <input type="text" id="characterName" name="characterName">
+                    <label for="charClass">Character Class:</label>
+                    <input type="text" id="charClass" name="charClass">
+                    <label for="charRace">Character Species:</label>
+                    <input type="text" id="charRace" name="charRace">
+                    <label for="charBackground">Character Background:</label>
+                    <input type="text" id="charBackground" name="charBackground">
+                    <label for="charLevel">Character Level (1-20)</label>
+                    <input type="text" id="textInputSlider" name="textInputSlider" value="">
+                    <input type="range" id="charLevel" min="1" max="20" step="1" list="numbers" onchange="updateTextInput(this.value);"/>
+                    
+                    <datalist id="numbers">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                        <option value="11"></option>
+                        <option value="12"></option>
+                        <option value="13"></option>
+                        <option value="14"></option>
+                        <option value="15"></option>
+                        <option value="16"></option>
+                        <option value="17"></option>
+                        <option value="18"></option>
+                        <option value="19"></option>
+                        <option value="20"></option>
+                    </datalist>
+                    <h4 id="alignment">Alignment</h4>
+                    <label for="good"  class="gVELabel">Good</label>
+                    <input type="radio" id ="good" name="gVE">
+                    <label for="neutralGVE" class="gVELabel">Neutral</label>
+                    <input type="radio" id ="neutralGVE" name="gVE">
+                    <label for="evil" class="gVELabel">Evil</label>
+                    <input type="radio" id ="evil" name="gVE">
+                    <label for="lawful"  class="lVULabel">Lawful</label>
+                    <input type="radio" id ="lawful" name="lVU">
+                    <label for="neutralLVU" class="lVULabel">Neutral</label>
+                    <input type="radio" id ="neutralLVU" name="lVU">
+                    <label for="unlawful" class="lVULabel">Chaotic</label>
+                    <input type="radio" id ="unlawful" name="lVU">
+                    <label for="exPoints">Experience Points</label>
+                    <input type="text" id="exPoints">
+
+                    
+
+                </div>
+                <h3>Skills</h3>
+                <div id="cacSection2" class="cacSection">
+                    <label for="inspiration" id="inspirationLabel">Inspiration</label>
+                    <input type="checkbox" id="inspiration" name="inspiration">
+                    <label for="passiveWisdom" id="passiveWisdomLabel">Passive Wisdom (Perception)</label>
+                    <input type="number" id="passiveWisdom" name="passiveWisdom">
+                    <label for="proficiencyBonus" id="proficiencyBonus">Proficiency Bonus</label>
+                    <input type="number" id="proficiencyBonus" name="proficiencyBonus">
+                    <div id="basicSkillContainer">
+                        <div class="basicSkills">
+                            <input type="checkbox" name="strength">
+                            <label for="strength">Strength</label>
+                            <input type="text" name="strength" >
+                        </div>
+                        <div class="basicSkills">
+                            <input type="checkbox" name="dexerity">
+                            <label for="dexerity">Dexerity</label>
+                            <input type="text" name="dexerity">
+                        </div>
+                        <div class="basicSkills">
+                            <input type="checkbox" name="constitution">
+                            <label for="constitution">Constitution</label>
+                            <input type="text" name="constitution">
+                        </div>
+                        <div class="basicSkills">
+                            <input type="checkbox" name="intelligence">
+                            <label for="intelligence">Intelligence</label>
+                            <input type="text" name="intelligence">
+                        </div>
+                        <div class="basicSkills">
+                            <input type="checkbox" name="wisdom">
+                            <label for="wisdom">Wisdom</label>
+                            <input type="text" name="wisdom">
+                        </div>
+                        <div class="basicSkills">
+                            <input type="checkbox" name="charisma">
+                            <label for="charisma">Charisma</label>
+                            <input type="text" name="charisma">
+                        </div>
+                    </div>
+
+                    <div id="skillsContainer">
+                        <div class="skills">
+                            <input type="checkbox" name="acrobatics">
+                            <label for="acrobatics">Acrobatics</label>
+                            <input type="number" name="acrobatics">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="animalHandling">
+                            <label for="animalHandling">Animal Handling</label>
+                            <input type="number" name="animalHandling">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="arcana">
+                            <label for="arcana">Arcana</label>
+                            <input type="number" name="arcana">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="athletics">
+                            <label for="athletics">Athletics</label>
+                            <input type="number" name="athletics">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="deception">
+                            <label for="deception">Deception</label>
+                            <input type="number" name="deception">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="history">
+                            <label for="history">History</label>
+                            <input type="text" name="history">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="insight">
+                            <label for="insight">Insight</label>
+                            <input type="number" name="insight">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="intimidation">
+                            <label for="intimidation">Intimidation</label>
+                            <input type="number" name="intimidation">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="investigation">
+                            <label for="investigation">Investigation</label>
+                            <input type="number" name="investigation">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="medicine">
+                            <label for="medicine">Medicine</label>
+                            <input type="number" name="medicine">
+                        </div>
+                         <div class="skills">
+                            <input type="checkbox" name="nature">
+                            <label for="nature">Nature</label>
+                            <input type="number" name="nature">
+                        </div> 
+                        <div class="skills">
+                            <input type="checkbox" name="perception">
+                            <label for="perception">Perception</label>
+                            <input type="number" name="perception">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="performance">
+                            <label for="performance">Performance</label>
+                            <input type="number" name="performance">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="persuasion">
+                            <label for="persuasion">Persuasion</label>
+                            <input type="number" name="persuasion">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="religion">
+                            <label for="religion">Religion</label>
+                            <input type="number" name="religion">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="sleightOfHand">
+                            <label for="sleightOfHand">Sleight of Hand</label>
+                            <input type="number" name="sleightOfHand">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="stealth">
+                            <label for="stealth">Stealth</label>
+                            <input type="number" name="stealth">
+                        </div>
+                        <div class="skills">
+                            <input type="checkbox" name="survival">
+                            <label for="survival">Survival</label>
+                            <input type="number" name="survival">
+                        </div>
+                        <label for="otherProficiencies">Other Proficiencies and Languages</label>
+                        <textarea id="otherProficiencies" name="otherProficiencies" rows="10" cols="50">
+                        </textarea>
+                       
+
+                    </div>
+                </div> 
+                <h3>Battle</h3>
+                <div id="cacSection3" class="cacSection">
+                    <div>
+                        <label for="armorClass">Armor Class</label>
+                        <input type="number" name="armorClass" id="armorClass">
+                    </div>
+                    <div> 
+                        <label for="inititive">Inititive</label>
+                        <input type="number" name="inititive" id="inititive">
+                    </div>
+                    <div>
+                        <label for="speed">Speed</label>
+                        <input type="number" name="speed" id="speed">
+                    </div>
+                    <div>
+                        <label for="hpMax">Hit Point Maximum</label>
+                        <input type="number" name="hpMax" id="hpMax">
+                    </div>
+                    <div> 
+                        <label for="currentHP">Current Hit Points</label>
+                        <input type="number" name="currentHP" id="currentHP">
+                    </div>
+                    <div>
+                        <label for="tempHP">Temporary Hit Points</label>
+                        <input type="number" name="tempHP" id="tempHP">
+                    </div>
+                    <div>
+                        <label for="totalHD">Total Hit Dice</label>
+                        <input type="number" name="totalHD" id="totalHD">
+                    </div>
+                    <div>
+                        <label for="hitDice">Hit Dice</label>
+                        <input type="number" name="hitDice" id="hitDice">
+                    </div>
+                    <div><a href="rollDiceApp.html">Roll Dice</a></div>
+                </div> 
+                <h3>Death Saves</h3> 
+                <div id="cacSection4" class="cacSection">
+                    <label for="deathSaveSucces">Successes</label>
+                    <input type="checkbox" name="deathSaveSucces" class="deathSaveSucces">
+                    <input type="checkbox" name="deathSaveSucces" class="deathSaveSucces">
+                    <input type="checkbox" name="deathSaveSucces" class="deathSaveSucces">
+                    <label for="deathSaveFailure">Failure</label>
+                    <input type="checkbox" name="deathSaveFailure" class="deathSaveFailure">
+                    <input type="checkbox" name="deathSaveFailure" class="deathSaveFailure">
+                    <input type="checkbox" name="deathSaveFailure" class="deathSaveFailure">
+                </div>
+                <h3>Attacks and Spellcasting</h3>
+                <div id="cacSection5" class="cacSection">
+                    <div id="addWeapon">
+                        <div>
+                            <label for="addWeaponName">Weapon Name:</label>
+                            <input type="text" name="addWeaponName" id="addWeaponName">
+                        </div>
+                        <div>
+                            <label for="addWeaponAttackBonus">Weapon Attack Bonus:</label>
+                            <input type="text" name="addWeaponAttackBonus" id="addWeaponAttackBonus">
+                        </div>
+                        <div>
+                            <label for="addWeaponDamageType">Weapon Damage Type:</label>
+                            <input type="text" name="addWeaponDamageType" id="addWeaponDamageType">
+                        </div>
+                    </div>
+                    <button id="addAWeapon">Add a Weapon</button>
+                    <a href="spells.html">Add a Spell</a>
+                </div>
+                <h3>Notes</h3>
+                <div id="cacSection6" class="cacSection">
+                    <label for="notes"></label>
+                        <textarea id="notes" name="notes" rows="30" cols="50">
+                        </textarea>
+                </div>
+                <input type="submit" value="Save My Character">
+            </form>
+
+          
+
+    </main>
+    <footer id="footer">
+      <p id="copyright">
+        &copy;<span id="currentYear"></span> | Melissa Liscom | New York |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

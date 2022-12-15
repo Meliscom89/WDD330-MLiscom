@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Melissa Liscom" />
+    <meta
+      name="description"
+      content="Final Project for Melissa Liscom in WDD 330: Web Frontend Development II at Brigham Young University - Idaho"
+    />
+    <title>Dungeon & Dragons App</title>
+    
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="shortcut icon" href="../favicon.ico">
+  </head>
+  <body>
+    <main>
+       
+            <img id="dragonEye" src="images/dragonEye.jpeg" width="100%" height="100%"></img>
+            <h1>Roll Dice</h1>
+            <div id="diceContainer">
+                
+                <button onclick="rollD4()" id="d4Button" class="diceButton">Roll a D4</button>
+                <span id="d4Placeholder" class="dicePlaceholder">
+                </span>
+
+                
+                <button onclick="rollD6()" id="d6Button" class="diceButton">Roll a D6</button>
+                <span id="d6Placeholder" class="dicePlaceholder">
+                </span>
+
+                
+                <button onclick="rollD8()" id="d8Button" class="diceButton">Roll a D8</button>
+                <span id="d8Placeholder" class="dicePlaceholder">
+                </span>
+
+                
+                <button onclick="rollD10()" id="d10Button" class="diceButton">Roll a D10</button>
+                <span id="d10Placeholder" class="dicePlaceholder">
+                </span>
+
+                
+                <button onclick="rollD12()" id="d12Button" class="diceButton">Roll a D12</button>
+                <span id="d12Placeholder" class="dicePlaceholder">
+                </span>
+
+                
+                <button onclick="rollPercent()" id="percentButton" class="diceButton">Roll a % Die</button>
+                <span id="percentPlaceholder" class="dicePlaceholder">                       
+                </span>
+
+                
+                <button onclick="rollD20()" id="d20Button" class="diceButton">Roll a D20</button>
+                <span id="d20Placeholder" class="dicePlaceholder">
+                </span>
+             </div>
+
+
+
+            <div class="navBottomContainer">
+                <ul class="navigationBottom">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="myChar.html"><li class="current">My Characters</li></a>
+                    <a href="createAChar.html"><li>Create a New Character</li></a>
+                    <a href="rollDiceApp.html"><li>Roll Dice</li></a>
+                    <a href="spells.html"><li>Spells</li></a>
+                </ul>
+            </div>
+
+
+    </main>
+    <footer id="footer">
+      <p id="copyright">
+        &copy;<span id="currentYear"></span> | Melissa Liscom | New York |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,119 +1,154 @@
 @media (max-width: 520px) {
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=UnifrakturMaguntia&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=UnifrakturMaguntia&display=swap');
 
-body{
-    background-color: black;
-}
-
-h1 {
-    font-family: 'UnifrakturMaguntia', cursive;
-    text-align: center;
-    color: white;
-}
-#container_index {
-    background-size: 100%;
-    display:grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    height: 100%;
-}
-img{
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-ul {
-    background-color: white;
-    color: black;
-    list-style-type: none;
-    padding: 2rem;
-    grid-column: 2/3;
-    grid-row: 2/3;  
-    border: 1px solid black;  
-}
-li {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    padding: 1em;
-    justify-content: center;
-    font-size: 1rem;
-}
-a:visited{
-    color: black
-}
-a:hover{
-    color: rgb(109, 109, 1);
-}
-.current{
-    color:grey;
-}
-.navigationBottom{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    position: fixed;
-    bottom: 0;
-    width: 90%;
-    background-color: black;
-    overflow: auto;
-}
-.navigationBottom a{
-    color: white;
-    text-align: center;
-
-}
-.navigationBottom a:hover{
-    color: red;
-}
-.cacSection{
-    display: grid;
-    border: solid 1px black;
-    padding: 1em;
-    background-color: white;
-}
-h3{
-    text-align: center;
-    font-family: 'UnifrakturMaguntia', cursive;
-    color: white;
-}
-
-#textInputSlider{
-    border: none;
-    text-align: center;
-}
-.gVELabel {
-    text-align: center;
-}
-.lVULabel {
-    text-align: center;
-}
-#cacSection2 label{
-    text-align: center;
-}
-
-#basicSkillContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.basicSkills{
-    padding: 1em;
-}
-.skills input[type="text"] {
-    margin: .25em;
-}
-#cacSection3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-}
-#cacSection3 input[type="number"] {
-    width: 25%;
-}
-#addWeapon div{
-    padding: .5em;
-}
-#footer{
-    margin-bottom: 200px;
+    body{
+        background-color: black;
+    }
+    
+    h1 {
+        font-family: 'UnifrakturMaguntia', cursive;
+        text-align: center;
+        color: white;
+    }
+    #container_index {
+        background-size: 100%;
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        height: 100%;
+    }
+    img{
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    
+    ul {
+        background-color: white;
+        color: black;
+        list-style-type: none;
+        padding: 2rem;
+        grid-column: 2/3;
+        grid-row: 2/3;  
+        border: 1px solid black;  
+    }
+    li {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        padding: 1em;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    a:visited{
+        color: grey;
+    }
+    a:hover{
+        color: red;
+    }
+    .current{
+        color:grey;
+    }
+    .navigationBottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        position: fixed;
+        bottom: 0;
+        width: 90%;
+        background-color: black;
+        overflow: auto;
+    }
+    .navigationBottom a{
+        color: white;
+        text-align: center;
+    
+    }
+    .navigationBottom a:hover{
+        color: red;
+    }
+    .cacSection{
+        display: grid;
+        border: solid 1px black;
+        padding: 1em;
+        background-color: white;
+    }
+    h3{
+        text-align: center;
+        font-family: 'UnifrakturMaguntia', cursive;
+        color: white;
+    }
+    
+    #textInputSlider{
+        border: none;
+        text-align: center;
+    }
+    .gVELabel {
+        text-align: center;
+    }
+    .lVULabel {
+        text-align: center;
+    }
+    #cacSection2 label{
+        text-align: center;
+    }
+    
+    #basicSkillContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .basicSkills{
+        padding: 1em;
+    }
+    .skills input[type="text"] {
+        margin: .25em;
+    }
+    #cacSection3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    #cacSection3 input[type="number"] {
+        width: 25%;
+    }
+    #addWeapon div{
+        padding: .5em;
+    }
+    #saveMyChar{
+        background-color: red;
+        border-radius: 1rem;
+        margin-top: 1em;
+    }
+    #footer{
+        margin-bottom: 200px;
+        background-color: white;
+    }
+     #diceContainer{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 1em;
+    }
+    .dicePlaceholder{
+        background-color: white;
+        padding: 1em;
+        margin:1em;
+    }
+    .diceButton{
+        background-color: red;
+        font-size: 1em;
+        padding: 1em;
+    }
+   #spellsContainer {
+        padding: 1em;
+        
+   }
+   #spellsContainer h3 {
+        padding:1rem;
+        font-size: 1rem;
+   }
+   #spellsContainer button {
+    padding:1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    
 }
 
 } 
